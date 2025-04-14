@@ -12,7 +12,7 @@
 			</a>
 			<nav class="hidden md:flex space-x-6 text-sm font-bold tracking-wide uppercase">
 				<a href="/" class="hover:text-gray-300 transition">Home</a>
-        <a href="about" class="hover:text-gray-300 transition">ABOUT</a>
+        <a href="/about" class="hover:text-gray-300 transition">ABOUT</a>
 			</nav>
 		</div>
 	</header>
