@@ -4,30 +4,29 @@ import fm from 'front-matter';
 
 const championshipsDir = 'src/content/championships';
 
-interface ChampionshipMetadata {
-  slug: string;
-  title: string;
-  description: string;
-  image: string;
-  season: string;
+interface Championship {
+	title: string;
+	description: string;
+	image: string;
+	season: string;
 }
 
-export function getAllChampionships(): ChampionshipMetadata[] {
-  const files = fs.readdirSync(championshipsDir);
+export function getAllChampionships(): Championship[] {
+	if (!fs.existsSync(championshipsDir)) return []; // Handle missing folder
 
-  return files
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => {
-      const slug = file.replace('.md', '');
-      const content = fs.readFileSync(path.join(championshipsDir, file), 'utf-8');
-      const { attributes } = fm<ChampionshipMetadata>(content);
+	const files = fs.readdirSync(championshipsDir);
 
-      return {
-        slug,
-        title: attributes.title,
-        description: attributes.description,
-        image: attributes.image,
-        season: attributes.season
-      };
-    });
+	return files
+		.filter((file) => file.endsWith('.md'))
+		.map((file) => {
+			const content = fs.readFileSync(path.join(championshipsDir, file), 'utf-8');
+			const { attributes } = fm<Championship>(content);
+			return {
+				title: attributes.title,
+				description: attributes.description,
+				image: attributes.image,
+				season: attributes.season
+			};
+		});
 }
+
