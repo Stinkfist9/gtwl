@@ -28,7 +28,7 @@
     <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
       <!-- Season Overview Button -->
       <a
-        href="/season"
+        href="/"
         class="px-6 py-3 rounded-full border border-gray-400 text-white bg-black hover:bg-gray-900 transition-all font-semibold text-sm tracking-wide"
       >
         Season 2025 Overview
@@ -36,7 +36,7 @@
     
       <!-- Points Ranking Button -->
       <a
-      href="/season#points"
+      href="/"
       class="flex items-center gap-3 px-6 py-3 rounded-full border border-gray-400 bg-black text-white hover:bg-gray-900 transition-all font-semibold text-sm tracking-wide"
     >
       <!-- Red Circle with GT Icon -->
