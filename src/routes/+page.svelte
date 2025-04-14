@@ -3,7 +3,7 @@
 
 	export let data: {
 		posts: PostMetadata[];
-		championships: { title: string; description: string; image: string; season: string }[];
+		championships: { title: string; description: string; image: string; season: string; slug: string }[];
 	};
 </script>
 
@@ -56,7 +56,9 @@
 		<div class="max-w-6xl mx-auto">
 			<!-- Section Title + Season Badge -->
 			<div class="flex flex-col items-start text-left mb-12">
-				<h2 class="text-2xl sm:text-2xl font-bold uppercase tracking-wide mb-2">Gran Turismo World League Championships</h2>
+				<h2 class="text-2xl sm:text-2xl font-bold uppercase tracking-wide mb-2">
+					Gran Turismo World League Championships
+				</h2>
 				<div
 					class="inline-block px-4 py-1 rounded-full text-sm font-semibold italic tracking-wide text-black"
 					style="background: linear-gradient(to bottom, #DE9636, #CD7D0E);"
@@ -68,18 +70,26 @@
 			<!-- Cards Grid -->
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 				{#each data.championships as championship}
-					<div class="bg-white text-black border border-gray-400 rounded-xl overflow-hidden shadow hover:shadow-lg transition-all">
-						<img src={championship.image} alt={championship.title} class="w-full h-48 object-cover" />
+					<a
+						href={`/championships/${championship.slug}`}
+						class="bg-white text-black border border-gray-400 rounded-xl overflow-hidden shadow hover:shadow-lg transition-all block"
+					>
+						<img
+							src={championship.image}
+							alt={championship.title}
+							class="w-full h-48 object-cover"
+						/>
 						<div class="p-3 text-center">
-							<h3 class="font-semibold text-base italic underline">{championship.title}</h3>
+							<h3 class="font-semibold text-base italic underline">
+								{championship.title}
+							</h3>
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 		</div>
 	</section>
 {/if}
-
 
 <!-- 📰 News Section -->
 {#if data.posts?.length}
