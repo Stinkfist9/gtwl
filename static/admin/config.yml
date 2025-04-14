@@ -26,3 +26,15 @@ collections:
       - { label: Draft, name: draft, widget: boolean, default: true }
       - { label: Optional, name: optional, widget: string, required: false }
       - { label: 'Content', name: 'body', widget: 'markdown' }
+
+collections:
+  - name: championships
+    label: Championships
+    folder: src/content/championships
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Season", name: "season", widget: "string" }
