@@ -27,14 +27,13 @@ collections:
       - { label: Optional, name: optional, widget: string, required: false }
       - { label: 'Content', name: 'body', widget: 'markdown' }
 
-collections:
-  - name: championships
-    label: Championships
-    folder: src/content/championships
+  - name: "championships"
+    label: "Championships"
+    folder: "src/content/championships"
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Season", name: "season", widget: "string" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "season", label: "Season", widget: "string" }
