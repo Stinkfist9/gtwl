@@ -4,16 +4,16 @@
 
 <!-- ✅ Hero Section with Background and Logo -->
 <section
-  class="relative bg-cover bg-center bg-no-repeat text-white py-45"
+  class="relative bg-cover bg-center bg-no-repeat text-white py-50"
   style="background-image: url('/gtwlcoverpage.jpg');"
 >
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-[rgba(0,0,0,0.2)] z-0"></div>
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.1)] z-0"></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-6xl mx-auto text-center px-4 sm:px-6">
     <img
-      src="/gtwl.png"
+      src="/gtwlouterglow.png"
       alt="GT World League Logo"
       class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
     />

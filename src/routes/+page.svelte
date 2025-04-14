@@ -10,28 +10,32 @@
 <!-- ✅ Hero Section with Background and Logo -->
 <section
   class="relative bg-cover bg-center bg-no-repeat text-white py-32"
-  style="background-image: url('/coverpage.jpg');"
+  style="background-image: url('/gtwlcoverpage.jpg');"
 >
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-[rgba(0,0,0,0.4)] z-0"></div>
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.1)] z-0"></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-6xl mx-auto text-center px-4 sm:px-6">
     <img
-      src="/gtwl.png"
+      src="/gtwlouterglow.png"
       alt="GT World League Logo"
       class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
     />
-    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica">
-      SEASON 2025
-    </h1>    
+
+	<h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica text-white"
+    style="text-shadow: 0 0 5px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.4);">
+  	SEASON 2025
+	</h1>
+
     <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+
       <!-- Season Overview Button -->
       <a
         href="/season"
         class="px-6 py-3 rounded-full border border-gray-400 text-white bg-black hover:bg-gray-900 transition-all font-semibold text-sm tracking-wide"
       >
-        Season 2025 Overview
+        Season 2025 Overview →
       </a>
     
       <!-- Points Ranking Button -->
@@ -43,7 +47,7 @@
       <span class="flex items-center justify-center w-6 h-6 bg-red-600 rounded-full">
         <img src="/icon_ranking.svg" alt="Ranking Icon" class="w-4 h-4" />
       </span>
-      Points Ranking
+      Points Ranking →
     </a>
     </div>
   </div>
@@ -72,7 +76,7 @@
 				{#each data.championships as championship}
 					<a
 						href={`/championships/${championship.slug}`}
-						class="bg-white text-black border border-gray-400 rounded-xl overflow-hidden shadow hover:shadow-lg transition-all block"
+						class="bg-white text-black border border-gray-600 rounded-xl overflow-hidden shadow hover:shadow-lg transition-all block"
 					>
 						<img
 							src={championship.image}

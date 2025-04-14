@@ -9,13 +9,14 @@
   <!-- Content -->
   <div class="relative z-10 max-w-6xl mx-auto text-center px-4 sm:px-6">
     <img
-      src="/gtwl.png"
+      src="/gtwlouterglow.png"
       alt="GT World League Logo"
       class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
     />
-    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica">
-      SEASON OVERVIEW
-    </h1>    
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica text-white"
+    style="text-shadow: 0 0 5px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.4);">
+  	SEASON OVERVIEW
+	</h1>    
   </div>
 </section>
 
