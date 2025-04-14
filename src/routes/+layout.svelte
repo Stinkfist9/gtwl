@@ -12,10 +12,6 @@
 			</a>
 			<nav class="hidden md:flex space-x-6 text-sm font-bold tracking-wide uppercase">
 				<a href="/" class="hover:text-orange-400 transition">Home</a>
-				<a href="/about" class="hover:text-orange-400 transition">About</a>
-				<a href="/post" class="hover:text-orange-400 transition">News</a>
-				<a href="/championships" class="hover:text-orange-400 transition">Championships</a>
-				<a href="/auth" class="hover:text-orange-400 transition">Login</a>
 			</nav>
 		</div>
 	</header>
