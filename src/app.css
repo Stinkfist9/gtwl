@@ -3,7 +3,7 @@
 body {
     background-color: #000;
     color: #fff;
-    font-family: Helvetica Neue, HelveticaNeue-Medium, HelveticaNeue-Light, Roboto, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     -webkit-text-size-adjust: none;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;

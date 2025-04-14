@@ -22,13 +22,13 @@
       alt="GT World League Logo"
       class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
     />
-    <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold uppercase tracking-wide font-helvetica">
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica">
       SEASON 2025
     </h1>    
     <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
       <!-- Season Overview Button -->
       <a
-        href="/"
+        href="/season"
         class="px-6 py-3 rounded-full border border-gray-400 text-white bg-black hover:bg-gray-900 transition-all font-semibold text-sm tracking-wide"
       >
         Season 2025 Overview
@@ -99,14 +99,14 @@
 			<!-- News Grid -->
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 				{#each data.posts as post}
-					<a href={`/post/${post.slug}`} class="border-b border-gray-700 hover:opacity-90 transition">
+					<a href={`/post/${post.slug}`} class="border-b border-gray-400 hover:opacity-90 transition">
 						<img
 							src={post.image}
 							alt={post.title}
 							class="w-full h-48 object-cover mb-4"
 						/>
 						<h3 class="text-base font-semibold italic mb-2">{post.title}</h3>
-						<p class="text-sm text-gray-300">{post.description}</p>
+						<p class="text-sm text-gray-300 mb-4">{post.description}</p>
 					</a>
 				{/each}
 			</div>
