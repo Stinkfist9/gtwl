@@ -80,7 +80,7 @@
 							class="w-full h-48 object-cover"
 						/>
 						<div class="p-3 text-center">
-							<h3 class="font-semibold text-base italic underline">
+							<h3 class="font-bold text-lg italic underline">
 								{championship.title}
 							</h3>
 						</div>
@@ -115,7 +115,7 @@
 							alt={post.title}
 							class="w-full h-48 object-cover mb-4"
 						/>
-						<h3 class="text-base font-semibold italic mb-2">{post.title}</h3>
+						<h3 class="text-xl font-bold italic mb-2">{post.title}</h3>
 						<p class="text-sm text-gray-300 mb-4">{post.description}</p>
 					</a>
 				{/each}

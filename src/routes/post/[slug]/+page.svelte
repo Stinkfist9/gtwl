@@ -11,19 +11,30 @@
 	};
 </script>
 
-<h1>{data.title}</h1>
-<h2>{data.description}</h2>
-{#if data.optional}
-	<h3>{data.optional}</h3>
-{/if}
+<!-- Post Page Design: Image at the top, followed by Title, Description, and Content -->
 
-<img src={data.image.src} alt="demo" width={data.image.width} height={data.image.height} />
-<!-- <Image
-	src={data.image.src}
-	alt="demo"
-	width={data.image.width}
-	height={data.image.height}
-	options={imageOptions}
-/> -->
+<section class="bg-black text-white px-6 py-12 pb-45 max-w-4xl mx-auto">
+	<!-- Image at the very top -->
+	<img
+		src={data.image.src}
+		alt={data.title}
+		width={data.image.width}
+		height={data.image.height}
+		class="mb-8"
+	/>
 
-<Markdown hast={data.body} {imageOptions} />
+	<!-- Post Title -->
+	<h1 class="text-3xl font-bold mb-2">{data.title}</h1>
+
+	<!-- Post Description -->
+	<h2 class="text-lg text-gray-300 mb-4">{data.description}</h2>
+
+	<!-- Optional Text (if exists) -->
+	{#if data.optional}
+		<h3 class="text-sm text-gray-400 mb-4">{data.optional}</h3>
+	{/if}
+
+	<!-- Post Content (Markdown Rendering) -->
+	<Markdown hast={data.body} {imageOptions} />
+</section>
+
