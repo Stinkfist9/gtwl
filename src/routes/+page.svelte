@@ -9,7 +9,7 @@
 
 <!-- ✅ Hero Section with Background and Logo -->
 <section
-  class="relative bg-cover bg-center bg-no-repeat text-white py-32"
+  class="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center text-white"
   style="background-image: url('/gtwlcoverpage.jpg');"
 >
   <!-- Overlay -->
@@ -51,7 +51,27 @@
     </a>
     </div>
   </div>
+ <!-- Gradient Overlay Only -->
+ <div class="absolute bottom-0 left-0 w-full h-[35%] z-0 pointer-events-none">
+	<div class="absolute inset-0 bg-gradient-to-t from-red-600 via-blue-500 to-transparent"></div>
+  </div>
 </section>
+
+<!-- Navigation Below Hero Banner -->
+<nav class="w-full bg-white text-black">
+	<ul class="flex justify-center divide-x divide-gray-300 text-sm sm:text-base font-semibold uppercase">
+	  {#each ['Round 1', 'Round 2', 'Round 3', 'Grand Final'] as round, index}
+		<li class="flex-1 text-center">
+		  <a
+			href={`#round-${index + 1}`}
+			class="block py-4 w-full transition-all duration-300 hover:text-white hover:bg-gradient-to-r from-[#0D8ED1] via-[#7142D9] to-[#D3234D]"
+		  >
+			{round}
+		  </a>
+		</li>
+	  {/each}
+	</ul>
+</nav>
 
 <!-- Championships -->
 {#if data.championships?.length}
@@ -64,7 +84,7 @@
 					Gran Turismo World League Championships
 				</h2>
 				<div
-					class="inline-block px-4 py-1 rounded-full text-sm font-semibold italic tracking-wide text-black"
+					class="inline-block px-4 py-1 rounded-full text-sm font-semibold tracking-wide text-black"
 					style="background: linear-gradient(to bottom, #DE9636, #CD7D0E);"
 				>
 					Season {data.championships[0]?.season}
@@ -84,7 +104,7 @@
 							class="w-full h-48 object-cover"
 						/>
 						<div class="p-3 text-center">
-							<h3 class="font-bold text-lg italic underline">
+							<h3 class="font-bold text-lg underline">
 								{championship.title}
 							</h3>
 						</div>
@@ -103,7 +123,7 @@
 			<div class="flex flex-col items-start text-left mb-12">
 				<h2 class="text-2xl sm:text-2xl font-bold uppercase tracking-wide mb-2">News List</h2>
 				<div
-					class="inline-block px-4 py-1 rounded-full text-sm font-semibold italic tracking-wide text-black"
+					class="inline-block px-4 py-1 rounded-full text-sm font-semibold tracking-wide text-black"
 					style="background: linear-gradient(to bottom, #DE9636, #CD7D0E);"
 				>
 					Latest Updates
@@ -119,7 +139,7 @@
 							alt={post.title}
 							class="w-full h-48 object-cover mb-4"
 						/>
-						<h3 class="text-xl font-bold italic mb-2">{post.title}</h3>
+						<h3 class="text-xl font-bold mb-2">{post.title}</h3>
 						<p class="text-sm text-gray-300 mb-4">{post.description}</p>
 					</a>
 				{/each}

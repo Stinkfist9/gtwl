@@ -1,6 +1,6 @@
 <!-- ✅ Hero Section with Background and Logo -->
 <section
-  class="relative bg-cover bg-center bg-no-repeat text-white py-40"
+  class="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center text-white"
   style="background-image: url('/seasoncover.jpg');"
 >
   <!-- Overlay -->
@@ -21,16 +21,20 @@
 </section>
 
 <section class="bg-white text-black px-6 pt-12 pb-45">
-    <div class="max-w-4xl mx-auto">
-      <!-- Page Title -->
-      <h1 class="text-3xl text-center sm:text-4xl font-extrabold tracking-wide mb-6">Season 2025 Overview</h1>
+  <div class="max-w-4xl mx-auto">
+    <!-- Centered Page Title -->
+    <div class="flex justify-center">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-wide mb-6 inline-block px-6 py-3 text-center bg-gradient-to-r from-[#0D8ED1] via-[#7142D9] to-[#D3234D] text-white">
+        Season 2025 Overview
+      </h1>
+    </div>
   
       <!-- Roadmap Section -->
       <div class="space-y-10">
 
 <!-- Championship Series Lineup -->
 <div class="mt-10">
-    <h2 class="text-2xl font-extrabold uppercase mb-2">1. Championship Series Lineup Announcement</h2>
+    <h2 class="text-2xl font-bold uppercase mb-2">1. Championship Series Lineup Announcement</h2>
     <p class="text-sm text-gray-700 mb-4">
         Official announcement of the full lineup of championship series for the season.
     </p>
@@ -83,7 +87,7 @@
   
         <!-- Pre-season Format -->
         <div>
-            <h2 class="text-2xl font-extrabold uppercase mb-2">2.Pre-Season Format</h2>
+            <h2 class="text-2xl font-bold uppercase mb-2">2.Pre-Season Format</h2>
           <p class="text-sm text-gray-700 mb-2">
             For the <strong>Manufacturers Cup</strong>, the pre-season will consist of 4 weeks of qualifying rounds split by region: <strong>Americas</strong>, <strong>EMEA</strong>, and <strong>Asia/Oceania</strong>. These qualifying rounds will determine the top-performing drivers and manufacturers in each region who will advance to the main championship event.
           </p>
@@ -102,7 +106,7 @@
 
         <!-- International Cup Drivers Draft -->
         <div>
-            <h2 class="text-2xl font-extrabold uppercase mb-2">3.International Cup Drivers Draft</h2>
+            <h2 class="text-2xl font-bold uppercase mb-2">3.International Cup Drivers Draft</h2>
             <p class="text-sm text-gray-700 mb-4">
                 Draft event where selected drivers are chosen to represent regions and teams for the International Cup.
             </p>
@@ -111,7 +115,7 @@
 
         <!-- League Shakedown -->
         <div>
-        <h2 class="text-2xl font-extrabold uppercase mb-2">4.League Shakedown</h2>
+        <h2 class="text-2xl font-bold uppercase mb-2">4.League Shakedown</h2>
           <p class="text-sm text-gray-700 mb-4">
             Practice and test sessions held across all championship series prior to the main event season.
           </p>
@@ -123,7 +127,7 @@
 
         <!-- Season Schedule -->
         <div class="mt-10">
-            <h2 class="text-xl font-extrabold uppercase mb-2">5. Season Schedule</h2>
+            <h2 class="text-2xl font-bold uppercase mb-2">5. Season Schedule</h2>
             <p class="text-sm text-gray-700 mb-6">
                 These global qualifying sessions span 4 weeks and apply to all championship series. Driver performance during this period determines qualification for the main events. In the <strong>Manufacturers Cup</strong>, these sessions also play a critical role in determining the top manufacturers.
             </p>

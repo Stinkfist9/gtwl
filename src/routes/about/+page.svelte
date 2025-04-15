@@ -4,7 +4,7 @@
 
 <!-- ✅ Hero Section with Background and Logo -->
 <section
-  class="relative bg-cover bg-center bg-no-repeat text-white py-50"
+  class="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center text-white"
   style="background-image: url('/gtwlcoverpage.jpg');"
 >
   <!-- Overlay -->
@@ -72,13 +72,13 @@
 
 	<!-- Content -->
 	<div class="relative z-20 text-white px-6 py-16 flex flex-col items-center justify-center text-center h-full">
-		<h2 class="text-3xl font-extrabold mb-4">JOIN THE LEAGUE</h2>
+		<h2 class="text-3xl font-bold mb-4">JOIN THE LEAGUE</h2>
 		<p class="text-lg max-w-xl mb-6">
 			Become part of the most electrifying online racing league and test your skills against the best.
 		</p>
 		<a
 			href="/"
-			class="bg-white text-black font-extrabold px-6 py-3 rounded-full hover:bg-gray-200 transition"
+			class="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition"
 		>
 			JOIN NOW
 		</a>

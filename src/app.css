@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
+/* Apply background image and set other properties */
 body {
-    background-color: #000;
+    background-color: black;
     color: #fff;
     font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
     -webkit-text-size-adjust: none;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
-    font-style: oblique;
 }
