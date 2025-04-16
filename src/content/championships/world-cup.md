@@ -1,6 +1,6 @@
 ---
 title: World Cup
 description: global main championship for gtwl
-image: /images/world-cup-2025-banner.png
+image: /images/gtwcseason3.png
 season: "2025"
 ---
