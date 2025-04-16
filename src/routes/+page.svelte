@@ -47,7 +47,7 @@
 				</svg>
 			</a>
 
-			<a href="/points-ranking" class="px-6 py-3 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center gap-2 hover:shadow-[0_0_16px_white] transition">
+			<a href="/" class="px-6 py-3 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center gap-2 hover:shadow-[0_0_16px_white] transition">
 				Points Ranking
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
