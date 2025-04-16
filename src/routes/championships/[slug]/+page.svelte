@@ -9,7 +9,7 @@
 	};
 </script>
 
-<section class="bg-black text-white px-6 py-12 pb-45 max-w-4xl mx-auto">
+<section class="bg-black text-white px-6 py-32 pb-45 max-w-4xl mx-auto">
 
     <img
     src={data.image.src}

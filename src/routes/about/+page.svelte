@@ -35,7 +35,7 @@
 
 	  <!-- Supported Platforms -->
 	  <div class="max-w-6xl mx-auto text-center mb-16">
-		<h2 class="text-3xl font-bold mb-6">SUPPORTED PLATFORMS</h2>
+		<h2 class="text-3xl font-bold mb-6">SUPPORTED GAME PLATFORMS</h2>
 		<div class="flex justify-center items-center gap-10 flex-wrap">
 		  <img src="/f124.png" alt="F1 24" class="h-12 grayscale hover:grayscale-0 transition duration-300" />
 		  <img src="/gt7white.png" alt="GT7" class="h-12 grayscale hover:grayscale-0 transition duration-300" />
@@ -44,7 +44,7 @@
 
 	<div class="max-w-screen-xl mx-auto space-y-20">
 	  <!-- About Us Section -->
-	  <div class="flex items-center space-x-12 animate__animated animate__fadeIn animate__delay-1s">
+	  <div class="flex items-center space-x-12">
 		<div class="w-full md:w-1/2">
 		  <img
 			src="/about.webp"
@@ -66,7 +66,7 @@
 	  </div>
   
 	  <!-- How We Started Section -->
-	  <div class="flex items-center space-x-12 flex-row-reverse animate__animated animate__fadeIn animate__delay-2s">
+	  <div class="flex items-center space-x-12 flex-row-reverse">
 		<div class="w-full md:w-1/2">
 		  <img
 			src="/started.jpg"
@@ -86,7 +86,7 @@
 	  </div>
   
 	  <!-- Our Mission Section -->
-	  <div class="flex items-center space-x-12 animate__animated animate__fadeIn animate__delay-3s">
+	  <div class="flex items-center space-x-12">
 		<div class="w-full md:w-1/2">
 		  <img
 			src="/mission.jpg"

@@ -13,7 +13,7 @@
 
 <!-- Post Page Design: Image at the top, followed by Title, Description, and Content -->
 
-<section class="bg-black text-white px-6 py-12 pb-45 max-w-4xl mx-auto">
+<section class="bg-black text-white px-6 py-32 pb-45 max-w-4xl mx-auto">
 	<!-- Image at the very top -->
 	<img
 		src={data.image.src}
