@@ -4,8 +4,46 @@
 body {
     background-color: black;
     color: #fff;
-    font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+    font-family: "Inter", sans-serif;
     -webkit-text-size-adjust: none;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
+
+@font-face {
+    font-family: 'UniviaPro';
+    src: url('/fonts/UniviaPro-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+
+  .animate__delay-1s {
+    animation-delay: 1s;
+  }
+
+  .animate__delay-2s {
+    animation-delay: 2s;
+  }
+
+  .animate__delay-3s {
+    animation-delay: 3s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

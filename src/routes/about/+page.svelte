@@ -1,87 +1,109 @@
 <script>
-	// No specific logic needed yet
-</script>
-
-<!-- ✅ Hero Section with Background and Logo -->
-<section
-  class="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center text-white"
-  style="background-image: url('/gtwlcoverpage.jpg');"
+	  const platforms = [
+    { name: 'Automobilista 2', logo: '/ams2.png' },
+    { name: 'F1 24', logo: '/f124.png' },
+    { name: 'Gran Turismo 7', logo: '/gt7.png' }
+  ];
+  </script>
+  
+  <section
+  class="relative min-h-[50vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
+  style="background-image: url('/mazda.jpg');"
 >
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-[rgba(0,0,0,0.1)] z-0"></div>
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
 
   <!-- Content -->
-  <div class="relative z-10 max-w-6xl mx-auto text-center px-4 sm:px-6">
-    <img
-      src="/gtwlouterglow.png"
-      alt="GT World League Logo"
-      class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
-    />
+  <div class="relative z-10 max-w-screen-xl text-center px-4">
+
+	  <!-- Title -->
+	  <h1 class="italic uppercase mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl" style="font-family: 'UniviaPro', sans-serif;">
+		  <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#d4d4d4] via-[#a3a3a3] to-[#f0f0f0]">
+			  GT World
+		  </span>
+		  League
+	  </h1>
+
+	  <!-- Description -->
+	  <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+		  GTWL powers competitive sim racing for communities who love Gran Turismo's depth and challenge.
+	  </p>
   </div>
 </section>
 
-<!-- Main Page Content -->
-<section class="bg-black text-white px-6 py-12 max-w-6xl mx-auto space-y-16">
-	<!-- About Us -->
-	<div class="grid md:grid-cols-2 gap-8 items-center">
-		<img src="/gtwl.png" alt="About Us" class="w-full shadow-lg" />
-		<div>
-			<h2 class="text-2xl font-bold mb-3">About Us</h2>
-			<p class="font-semibold text-gray-300">
-				We are a dedicated racing league built for competitive drivers who crave a professional yet community-driven atmosphere. 
-                With the mission to deliver authentic, thrilling motorsport experiences.
-			</p>
+  <section class="bg-black text-white py-20 px-6 sm:px-12">
+
+	  <!-- Supported Platforms -->
+	  <div class="max-w-6xl mx-auto text-center mb-16">
+		<h2 class="text-3xl font-bold mb-6">SUPPORTED PLATFORMS</h2>
+		<div class="flex justify-center items-center gap-10 flex-wrap">
+		  <img src="/f124.png" alt="F1 24" class="h-20 grayscale hover:grayscale-0 transition duration-300" />
+		  <img src="/gt7.png" alt="GT7" class="h-20 grayscale hover:grayscale-0 transition duration-300" />
 		</div>
-	</div>
+	  </div>
 
-	<!-- Our Story -->
-	<div class="grid md:grid-cols-2 gap-8 items-center">
-		<div>
-			<h2 class="text-2xl font-bold mb-3">Our Story</h2>
-			<p class="font-semibold text-gray-300">
-				We started as the Veloce Grid Racing League back in January of 2024, in Assetto Corsa Competizione.
-                In March of the same year, we shifted our focus on heavily modding our server with Gran Turismo mods in the Assetto Corsa platform.
-                After months of endless tweaking of server and car configurations, we finally decided to shift our racing community to the official
-                Gran Turismo platform. In May 30 of 2024, we finally rebranded as the Gran Turismo World League and hosted our championships on Gran Turismo 7.
-
-			</p>
+	<div class="max-w-screen-xl mx-auto space-y-20">
+	  <!-- About Us Section -->
+	  <div class="flex items-center space-x-12 animate__animated animate__fadeIn animate__delay-1s">
+		<div class="w-full md:w-1/2">
+		  <img
+			src="/about.webp"
+			alt="About Us"
+			class="rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
+		  />
 		</div>
-		<img src="/acc.jpg" alt="Our Story" class="w-full shadow-lg" />
-	</div>
-
-	<!-- Our Mission -->
-	<div class="grid md:grid-cols-2 gap-8 items-center">
-		<img src="/ourmission.jpg" alt="Our Mission" class="w-full shadow-lg" />
-		<div>
-			<h2 class="text-2xl font-bold mb-3">Our Mission</h2>
-			<p class="font-semibold text-gray-300">
-				Our mission is to nurture the next generation of sim racers by providing a fair, competitive, and 
-                exciting racing environment—open to all skill levels, and focused on growth and sportsmanship.
-			</p>
+		<div class="w-full md:w-1/2 space-y-4">
+		  <h2 class="text-4xl uppercase font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-[#d4d4d4] via-[#a3a3a3] to-[#f0f0f0]">About Us</h2>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			We are a community-driven league focused on delivering an exceptional and competitive sim racing experience, 
+			where Gran Turismo enthusiasts come together to showcase their skills and passion.
+		  </p>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			Our league brings together racers of all levels, from casual players to seasoned competitors, 
+			all with a shared love for the Gran Turismo series and motorsports.
+		  </p>
 		</div>
+	  </div>
+  
+	  <!-- How We Started Section -->
+	  <div class="flex items-center space-x-12 flex-row-reverse animate__animated animate__fadeIn animate__delay-2s">
+		<div class="w-full md:w-1/2">
+		  <img
+			src="/started.jpg"
+			alt="How We Started"
+			class="rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
+		  />
+		</div>
+		<div class="w-full md:w-1/2 space-y-4">
+		  <h2 class="text-4xl uppercase font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-[#d4d4d4] via-[#a3a3a3] to-[#f0f0f0]">How We Started</h2>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			Our journey began with a small group of passionate players coming together to create a more structured and exciting racing experience.
+		  </p>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			Over time, our league grew in size and reputation, with members competing in organized events that now span across different seasons.
+		  </p>
+		</div>
+	  </div>
+  
+	  <!-- Our Mission Section -->
+	  <div class="flex items-center space-x-12 animate__animated animate__fadeIn animate__delay-3s">
+		<div class="w-full md:w-1/2">
+		  <img
+			src="/mission.jpg"
+			alt="Our Mission"
+			class="rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
+		  />
+		</div>
+		<div class="w-full md:w-1/2 space-y-4">
+		  <h2 class="text-4xl uppercase font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-[#d4d4d4] via-[#a3a3a3] to-[#f0f0f0]">Our Mission</h2>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			Our mission is to foster a supportive and competitive environment where drivers can grow, learn, and race together in the Gran Turismo world.
+		  </p>
+		  <p class="text-lg text-gray-300 leading-relaxed">
+			Through our events and community-driven approach, we strive to create a space where everyone feels welcome, and the spirit of fair competition thrives.
+		  </p>
+		</div>
+	  </div>
 	</div>
-</section>
-
-<!-- CTA Section with background image and gradient overlay -->
-<section class="w-full relative mt-20 h-[400px]">
-	<!-- Background Image -->
-	<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/CTA.jpg');"></div>
-
-	<!-- Gradient Overlay -->
-	<div class="absolute inset-0 bg-gradient-to-r from-[#3290DE]/80 to-[#DB3267]/60 z-10"></div>
-
-	<!-- Content -->
-	<div class="relative z-20 text-white px-6 py-16 flex flex-col items-center justify-center text-center h-full">
-		<h2 class="text-3xl font-bold mb-4">JOIN THE LEAGUE</h2>
-		<p class="text-lg max-w-xl mb-6">
-			Become part of the most electrifying online racing league and test your skills against the best.
-		</p>
-		<a
-			href="/"
-			class="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition"
-		>
-			JOIN NOW
-		</a>
-	</div>
-</section>
-
+  </section>
+  
