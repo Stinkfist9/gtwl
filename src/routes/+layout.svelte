@@ -30,7 +30,6 @@
         <li><a href="/" class="block py-2 px-3 text-white hover:text-gray-300">Home</a></li>
         <li><a href="/about" class="block py-2 px-3 text-white hover:text-gray-300">About</a></li>
         <li><a href="/" class="block py-2 px-3 text-white hover:text-gray-300">Services</a></li>
-        <li><a href="/" class="block py-2 px-3 text-white hover:text-gray-300">Contact</a></li>
       </ul>
     </div>
   </div>

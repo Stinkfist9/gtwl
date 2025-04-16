@@ -65,7 +65,7 @@
 			<!-- Section Title + Season Badge -->
 			<div class="flex flex-col items-start text-left mb-12">
 				<h2 class="text-lg sm:text-lg font-bold uppercase tracking-wide mb-2">
-					Gran Turismo World League Championships
+					GT World League Championships
 				</h2>
 				<div
 					class="inline-block px-4 py-1 rounded-full text-sm font-semibold tracking-wide text-black"

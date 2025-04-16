@@ -1,30 +1,40 @@
-<!-- ✅ Hero Section with Background and Logo -->
 <section
-  class="relative h-[60vh] w-full bg-cover bg-center flex items-center justify-center text-white"
-  style="background-image: url('/seasoncover.jpg');"
+	class="relative min-h-[50vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
+	style="background-image: url('/mazda.jpg');"
 >
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-[rgba(0,0,0,0.4)] z-0"></div>
+	<!-- Overlay -->
+	<div class="absolute inset-0 bg-black/60 z-0"></div>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-6xl mx-auto text-center px-4 sm:px-6">
-    <img
-      src="/gtwlouterglow.png"
-      alt="GT World League Logo"
-      class="mx-auto mb-5 w-40 sm:w-56 md:w-80 lg:w-100 xl:w-200"
-    />
-    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide font-helvetica text-white"
-    style="text-shadow: 0 0 5px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.4);">
-  	SEASON OVERVIEW
-	</h1>    
-  </div>
+	<!-- Content -->
+	<div class="relative z-10 max-w-screen-xl text-center px-4">
+
+		<!-- Title -->
+		<h1 class="italic uppercase mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl" style="font-family: 'UniviaPro', sans-serif;">
+			<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#d4d4d4] via-[#a3a3a3] to-[#f0f0f0]">
+				GT World
+			</span>
+			League
+		</h1>
+
+		<!-- Description -->
+		<p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+			GTWL powers competitive sim racing for communities who love Gran Turismo's depth and challenge.
+		</p>
+	</div>
 </section>
 
 <section class="bg-white text-black px-6 pt-12 pb-45">
   <div class="max-w-4xl mx-auto">
     <!-- Centered Page Title -->
     <div class="flex justify-center">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-wide mb-6 inline-block px-6 py-3 text-center bg-gradient-to-r from-[#0D8ED1] via-[#7142D9] to-[#D3234D] text-white">
+      <h1 
+        class="text-3xl sm:text-4xl font-bold tracking-wide mb-6 inline-block px-6 py-3 text-center 
+               text-white shadow-lg"
+        style="
+          font-family: 'UniviaPro', sans-serif;
+          background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffff);
+        "
+      >
         Season 2025 Overview
       </h1>
     </div>
@@ -104,30 +114,21 @@
           </p>
         </div>
 
-        <!-- International Cup Drivers Draft -->
-        <div>
-            <h2 class="text-2xl font-bold uppercase mb-2">3.International Cup Drivers Draft</h2>
-            <p class="text-sm text-gray-700 mb-4">
-                Draft event where selected drivers are chosen to represent regions and teams for the International Cup.
-            </p>
-            <img src="/draft-night-teams.png" alt="Draft 1" class="w-full object-cover rounded" />
-        </div>
-
         <!-- League Shakedown -->
         <div>
-        <h2 class="text-2xl font-bold uppercase mb-2">4.League Shakedown</h2>
+        <h2 class="text-2xl font-bold uppercase mb-2">3.League Shakedown</h2>
           <p class="text-sm text-gray-700 mb-4">
             Practice and test sessions held across all championship series prior to the main event season.
           </p>
           <div class="flex gap-4">
-            <img src="/placeholder-portrait1.png" alt="Schedule 1" class="w-1/2 object-cover rounded" />
-            <img src="/placeholder-portrait2.png" alt="Schedule 2" class="w-1/2 object-cover rounded" />
+            <img src="/shakedown2025.png" alt="Schedule 1" class="w-1/2 object-cover rounded" />
+            <img src="/shakedownint2025.png" alt="Schedule 2" class="w-1/2 object-cover rounded" />
           </div>
         </div>
 
         <!-- Season Schedule -->
         <div class="mt-10">
-            <h2 class="text-2xl font-bold uppercase mb-2">5. Season Schedule</h2>
+            <h2 class="text-2xl font-bold uppercase mb-2">4. Season Schedule</h2>
             <p class="text-sm text-gray-700 mb-6">
                 These global qualifying sessions span 4 weeks and apply to all championship series. Driver performance during this period determines qualification for the main events. In the <strong>Manufacturers Cup</strong>, these sessions also play a critical role in determining the top manufacturers.
             </p>

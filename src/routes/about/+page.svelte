@@ -37,8 +37,8 @@
 	  <div class="max-w-6xl mx-auto text-center mb-16">
 		<h2 class="text-3xl font-bold mb-6">SUPPORTED PLATFORMS</h2>
 		<div class="flex justify-center items-center gap-10 flex-wrap">
-		  <img src="/f124.png" alt="F1 24" class="h-20 grayscale hover:grayscale-0 transition duration-300" />
-		  <img src="/gt7.png" alt="GT7" class="h-20 grayscale hover:grayscale-0 transition duration-300" />
+		  <img src="/f124.png" alt="F1 24" class="h-12 grayscale hover:grayscale-0 transition duration-300" />
+		  <img src="/gt7white.png" alt="GT7" class="h-12 grayscale hover:grayscale-0 transition duration-300" />
 		</div>
 	  </div>
 
@@ -106,4 +106,3 @@
 	  </div>
 	</div>
   </section>
-  
