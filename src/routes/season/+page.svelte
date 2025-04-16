@@ -1,5 +1,5 @@
 <section
-	class="relative min-h-[50vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
+	class="relative min-h-[60vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
 	style="background-image: url('/mazda.jpg');"
 >
 	<!-- Overlay -->

@@ -16,12 +16,12 @@
 <section class="bg-black text-white px-6 py-32 pb-45 max-w-4xl mx-auto">
 	<!-- Image at the very top -->
 	<img
-		src={data.image.src}
-		alt={data.title}
-		width={data.image.width}
-		height={data.image.height}
-		class="mb-8"
-	/>
+	src={data.image.src}
+	alt={data.title}
+	width={data.image.width}
+	height={data.image.height}
+	class="mb-8 w-full max-w-full h-auto object-cover rounded-lg"
+/>
 
 	<!-- Post Title -->
 	<h1 class="text-3xl font-bold mb-2">{data.title}</h1>

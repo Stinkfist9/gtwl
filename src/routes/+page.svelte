@@ -8,7 +8,7 @@
 </script>
 
 <section
-	class="relative min-h-[75vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
+	class="relative min-h-[60vh] bg-black text-white bg-cover bg-center overflow-hidden border-b border-gray-800 flex items-center justify-center"
 	style="background-image: url('/mazda.jpg');"
 >
 	<!-- Overlay -->
@@ -16,14 +16,6 @@
 
 	<!-- Content -->
 	<div class="relative z-10 max-w-screen-xl text-center px-4">
-		<!-- Badge -->
-		<a href="/" class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-white bg-gray-800 rounded-full hover:bg-gray-700">
-			<span class="text-xs bg-white text-black font-bold rounded-full px-4 py-1.5 me-3">New</span>
-			<span class="text-sm font-medium">GTWL platform update! See what's new</span>
-			<svg class="w-2.5 h-2.5 ms-2 rtl:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 6 10">
-				<path d="M1 9l4-4-4-4" stroke-linecap="round" stroke-linejoin="round" />
-			</svg>
-		</a>
 
 		<!-- Title -->
 		<h1 class="italic uppercase mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl" style="font-family: 'UniviaPro', sans-serif;">
@@ -39,23 +31,23 @@
 		</p>
 
 		<!-- Buttons -->
-		<div class="flex flex-col sm:flex-row justify-center gap-4">
-			<a href="/season" class="px-6 py-3 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center gap-2 hover:shadow-[0_0_16px_white] transition">
-				Season Overview
-				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-				</svg>
+		<div class="flex flex-col sm:flex-row justify-center gap-4 font-bold text-sm">
+			<a href="/season" class="w-fit mx-auto sm:mx-0 px-4 py-2 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center justify-center gap-2 hover:shadow-[0_0_16px_white] transition text-center">
+			  Season Overview
+			  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+			  </svg>
 			</a>
-
-			<a href="/post/gtwl-season-2025-standings" class="px-6 py-3 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center gap-2 hover:shadow-[0_0_16px_white] transition">
-				Points Ranking
-				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-				</svg>
+		  
+			<a href="/post/gtwl-season-2025-standings" class="w-fit mx-auto sm:mx-0 px-4 py-2 rounded-full text-white bg-black border-2 border-white shadow-[0_0_12px_white] flex items-center justify-center gap-2 hover:shadow-[0_0_16px_white] transition text-center">
+			  Points Ranking
+			  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+			  </svg>
 			</a>
-		</div>
+		  </div>
 	</div>
-</section>
+</section>	
 
 <!-- Championships -->
 {#if data.championships?.length}
